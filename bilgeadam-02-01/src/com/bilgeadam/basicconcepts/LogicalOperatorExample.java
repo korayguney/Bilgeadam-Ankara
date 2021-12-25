@@ -28,6 +28,4 @@ public class LogicalOperatorExample {
         }
         System.out.println(x); // 0
     }
-
-
 }
