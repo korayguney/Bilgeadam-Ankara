@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="bilgeadam-02-01:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/bilgeadam_02_01_jar</output-path>
+    <root id="archive" name="bilgeadam-02-01.jar">
+      <element id="module-output" name="bilgeadam-02-01" />
+    </root>
+  </artifact>
+</component>
