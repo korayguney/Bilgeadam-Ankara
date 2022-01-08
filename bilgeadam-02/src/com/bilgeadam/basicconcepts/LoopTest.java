@@ -4,9 +4,9 @@ public class LoopTest {
     public static void main(String[] args) {
         // testWithWhileLoop();
         // testWithDoWhileLoop();
-        //testWithForLoop();
+        // testWithForLoop();
         testWithForLoop2();
-        //testWithForLoopOuter();
+        // testWithForLoopOuter();
     }
 
     private static void testWithForLoop2() {

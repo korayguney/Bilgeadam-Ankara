@@ -20,6 +20,5 @@ public class PrimitiveTypeDefaultExample {
         System.out.println(myFloat); // 0.0
         System.out.println(myDouble); // 0.0
         System.out.println(myBoolean); // false
-
     }
 }

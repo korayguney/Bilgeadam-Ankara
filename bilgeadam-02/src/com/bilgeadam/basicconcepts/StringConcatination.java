@@ -2,7 +2,7 @@ package com.bilgeadam.basicconcepts;
 
 public class StringConcatination {
     public static void main(String[] args) {
-        System.out.println(" " + 4 + (3 + 1) + " Bilgeadam");
+        System.out.println(4 + (3 + 1) + " Bilgeadam " + 4 + (3 + 1));
         //System.out.println("Hello " + new Student());
     }
 
