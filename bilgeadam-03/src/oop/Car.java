@@ -6,12 +6,49 @@ public class Car {
     // instance variables (fields, class members, değişken, alan vs...)
     // states
     public String color = "Black";
-    int capacity;
+    int capacity = 10;
     protected double horsePower;
     String fuelType;
     boolean isManualTransmission;
     int modelYear;
     String modelName;
+
+    // shadowing
+    public Car(int capacity) {
+        this.capacity = capacity;
+        System.out.println("Capacity = " + capacity);
+    }
+
+    public Car(String color, int modelYear) {
+        this.color = color;
+        this.modelYear = modelYear;
+    }
+
+    public Car(){
+        this("Brown", 2021);
+    }
+
+    public Car(boolean isManualTransmission){
+        this("Brown", 2021);
+        this.isManualTransmission = isManualTransmission;
+    }
+
+    public Car(String customColor, int mycapacity,  String fuelType, boolean isManualTransmission, int modelYear, String modelName) {
+        customColor = "Yellow";
+        color = customColor;
+        capacity = mycapacity;
+        this.horsePower = 165;
+        this.fuelType = fuelType;
+        this.isManualTransmission = isManualTransmission;
+        this.modelYear = modelYear;
+        this.modelName = modelName;
+    }
+
+    public Car(String fuelType, boolean isManualTransmission, int modelYear) {
+        this.fuelType = fuelType;
+        this.isManualTransmission = isManualTransmission;
+        this.modelYear = modelYear;
+    }
 
     // methods
     // behaviors
@@ -38,25 +75,9 @@ public class Car {
         int a; // --> local variable
         System.out.println(color);
     }
-}
 
-class CarImpl {
-    public static void main(String[] args) {
-        // create object of Car class
-        Car car = new Car();
-        System.out.println("Capacity : " + car.capacity);
-        System.out.println("Color : " + car.color);
-        System.out.println("Color : " + car.color);
-        car.color = "Blue";
-        System.out.println("Color : " + car.color);
-        System.out.println("Color : " + car.color);
-        System.out.println("hasManualTransmission ? : " + car.isManualTransmission);
-        System.out.println("Last speed : " + car.accelerate(10));
-        System.out.println("Last speed : " + car.accelerate(20));
-        System.out.println("Last speed : " + car.accelerate(25));
-        System.out.println("Last speed : " + car.accelerate(50, 0.9));
-
-        car.getCarColor();
+   public Car getCarObject(){
+        return new Car();
     }
 }
 
