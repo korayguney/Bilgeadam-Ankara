@@ -6,6 +6,8 @@
       <module fileurl="file://$PROJECT_DIR$/bilgeadam-01/bilgeadam-01.iml" filepath="$PROJECT_DIR$/bilgeadam-01/bilgeadam-01.iml" />
       <module fileurl="file://$PROJECT_DIR$/bilgeadam-02/bilgeadam-02.iml" filepath="$PROJECT_DIR$/bilgeadam-02/bilgeadam-02.iml" />
       <module fileurl="file://$PROJECT_DIR$/bilgeadam-03/bilgeadam-03.iml" filepath="$PROJECT_DIR$/bilgeadam-03/bilgeadam-03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bilgeadam-04/bilgeadam-04.iml" filepath="$PROJECT_DIR$/bilgeadam-04/bilgeadam-04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bilgeadam-hw-solutions/bilgeadam-hw-solutions.iml" filepath="$PROJECT_DIR$/bilgeadam-hw-solutions/bilgeadam-hw-solutions.iml" />
     </modules>
   </component>
 </project>

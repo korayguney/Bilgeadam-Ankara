@@ -32,7 +32,7 @@ public class VarArgsExample {
     }
 
     public static void main(String[] args) {
-        double averageResult = new VarArgsExample().calculateAverage("Average", 25, 25, 45, 56, 9);
+        double averageResult = new VarArgsExample().calculateAverage("Average", 25, 25, 45, 56, 9, 45, 67);
         System.out.println(averageResult);
     }
 
