@@ -1,4 +1,4 @@
-package encapsulation;
+package com.bilgeadam.encapsulation;
 
 public class BankCustomer {
 

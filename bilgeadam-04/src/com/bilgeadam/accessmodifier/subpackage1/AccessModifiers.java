@@ -1,4 +1,4 @@
-package accessmodifier.subpackage1;
+package com.bilgeadam.accessmodifier.subpackage1;
 
 public class AccessModifiers {
 
@@ -10,6 +10,8 @@ public class AccessModifiers {
 
     private void foo(){
         privateStr = "Test";
+        int a = 1;
+        System.out.println(a);
     }
 
     class InnerAccessModifiers {

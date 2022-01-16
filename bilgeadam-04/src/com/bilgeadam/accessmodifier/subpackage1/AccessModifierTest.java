@@ -1,4 +1,4 @@
-package accessmodifier.subpackage1;
+package com.bilgeadam.accessmodifier.subpackage1;
 
 public class AccessModifierTest {
     public static void main(String[] args) {

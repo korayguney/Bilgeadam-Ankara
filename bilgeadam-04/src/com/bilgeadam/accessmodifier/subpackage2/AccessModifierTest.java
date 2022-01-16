@@ -1,6 +1,6 @@
-package accessmodifier.subpackage2;
+package com.bilgeadam.accessmodifier.subpackage2;
 
-import accessmodifier.subpackage1.AccessModifiers;
+import com.bilgeadam.accessmodifier.subpackage1.AccessModifiers;
 
 public class AccessModifierTest extends AccessModifiers {
     public static void main(String[] args) {
