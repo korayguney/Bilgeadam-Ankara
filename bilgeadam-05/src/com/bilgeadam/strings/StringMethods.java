@@ -1,5 +1,7 @@
 package com.bilgeadam.strings;
 
+import org.apache.commons.lang3.StringUtils;
+
 import java.util.Locale;
 
 public class StringMethods {
@@ -7,6 +9,7 @@ public class StringMethods {
         String test = "Hello Bilgeadam";
         String test1 = "    Hello Bilgeadam    ";
         String test2 = null;
+        String test3 = null;
         String testIgnoreCase = "HELLO Bilgeadam";
 
         System.out.println(test.charAt(0));
@@ -46,5 +49,8 @@ public class StringMethods {
         String newStr = String.format("Adı : %s, Soyadı: %s, yaşı : %d" , name, surname, age);
         System.out.println(newStr);
         System.out.printf("Adı : %s, Soyadı: %s" , name, surname);
+
+        StringUtils.defaultIfBlank(test3, "Test 3 is not blank");
+        System.out.println("Test 3 --->" + test3);
     }
 }
