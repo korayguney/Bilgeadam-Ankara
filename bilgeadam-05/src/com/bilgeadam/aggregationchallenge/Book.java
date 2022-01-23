@@ -2,20 +2,20 @@ package com.bilgeadam.aggregationchallenge;
 
 public class Book {
     private String name;
-    private Author author;
+    private Author[] authorArray;
     private double price;
     private int qty;
 
-    public Book(String name, Author author, double price, int qty) {
+    public Book(String name, Author[] author, double price, int qty) {
         this.name = name;
-        this.author = author;
+        this.authorArray = author;
         this.price = price;
         this.qty = qty;
     }
 
-    public Book(String name, Author author, double price) {
+    public Book(String name, Author[] author, double price) {
         this.name = name;
-        this.author = author;
+        this.authorArray = author;
         this.price = price;
     }
 
@@ -23,8 +23,8 @@ public class Book {
         return name;
     }
 
-    public Author getAuthor() {
-        return author;
+    public Author[] getAuthorArray() {
+        return authorArray;
     }
 
     public double getPrice() {
@@ -45,9 +45,15 @@ public class Book {
 
     @Override
     public String toString() {
+        StringBuilder authorStr = new StringBuilder();
+        for (Author author : authorArray) {
+            authorStr.append(author);
+        }
+
         return "Book{" +
                 "name='" + name + '\'' +
-                ", author=" + author +
+                ", author=" + authorStr +
+                // ", author=" + Arrays.toString(author) +
                 ", price=" + price +
                 ", qty=" + qty +
                 '}';
