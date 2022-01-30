@@ -1,9 +1,24 @@
 package com.bilgeadam.enumerations2;
 
 public enum CoffeeSize {
-    SMALL(15, "Tall"),
-    MEDIUM(18, "Grande"),
-    LARGE(21, "Venti");
+    SMALL(15, "Tall") {
+        @Override
+        public double calculatePriceWithDollar() {
+            return getPrice() * 0.13;
+        }
+    },
+    MEDIUM(18, "Grande"){
+        @Override
+        public double calculatePriceWithDollar() {
+            return getPrice() * 0.13;
+        }
+    },
+    LARGE(21, "Venti") {
+        @Override
+        public double calculatePriceWithDollar() {
+            return getPrice() * 0.13;
+        }
+    };
 
     private int price;
     private String commersialName;
@@ -20,4 +35,6 @@ public enum CoffeeSize {
     public String getCommersialName() {
         return commersialName;
     }
+
+    public abstract double calculatePriceWithDollar();
 }
