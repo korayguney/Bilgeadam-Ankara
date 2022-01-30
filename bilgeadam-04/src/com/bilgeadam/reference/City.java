@@ -1,4 +1,4 @@
-package reference;
+package com.bilgeadam.reference;
 
 public class City implements Cloneable {
     // instance (member) variable, field, değişken

@@ -6,7 +6,7 @@ public class Student implements Cloneable {
     private String secondName;
     private int age;
     private long ssid;
-    private String gender;
+    private Gender gender;
 
     // constructors
     public Student() {
@@ -17,7 +17,7 @@ public class Student implements Cloneable {
         this.secondName = secondName;
     }
 
-    public Student(String firstName, String secondName, int age, long ssid, String gender) {
+    public Student(String firstName, String secondName, int age, long ssid, Gender gender) {
         this.firstName = firstName;
         this.secondName = secondName;
         this.age = age;
@@ -60,11 +60,11 @@ public class Student implements Cloneable {
         this.ssid = ssid;
     }
 
-    public String getGender() {
+    public Gender getGender() {
         return gender;
     }
 
-    public void setGender(String gender) {
+    public void setGender(Gender gender) {
         this.gender = gender;
     }
 

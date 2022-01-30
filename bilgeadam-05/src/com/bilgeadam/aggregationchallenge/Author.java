@@ -11,6 +11,11 @@ public class Author extends Object {
         setGender(gender);
     }
 
+    public Author(String name, String email) {
+        this.name = name;
+        this.email = email;
+    }
+
     public String getName() {
         return name;
     }

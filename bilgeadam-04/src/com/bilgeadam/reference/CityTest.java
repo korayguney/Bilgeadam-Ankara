@@ -1,15 +1,15 @@
-package reference;
+package com.bilgeadam.reference;
 
-import test.Test;
-import test100.Test2;
-import test100.Test3;
+import com.bilgeadam.test.Test;
+import com.bilgeadam.test100.Test2;
+import com.bilgeadam.test100.Test3;
 
 import java.util.List;
 
 public class CityTest {
     public static void main(String[] args) throws CloneNotSupportedException {
         Test test = new Test();
-        test100.Test test1 = new test100.Test();
+        com.bilgeadam.test100.Test test1 = new com.bilgeadam.test100.Test();
         List list;
         java.awt.List list2;
 

@@ -9,10 +9,11 @@ public class Pen {
                return area;
            }
 
-            public double draw(Circle c) {
+           public double draw(Triangle c) {
                double area = Math.PI * Math.pow(c.getRadius() , 2);
                return area;
            }
+
            public double draw(Rectangle r) {
                double area = r.getHeight() * r.getWeight();
                return area;

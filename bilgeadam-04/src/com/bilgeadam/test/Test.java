@@ -1,4 +1,4 @@
-package test;
+package com.bilgeadam.test;
 
 public class Test {
     public Test(){
